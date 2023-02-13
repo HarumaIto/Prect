@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "832025697830",
+    "firebase_url": "https://prect-ee9fb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "prect-ee9fb",
+    "storage_bucket": "prect-ee9fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832025697830:android:459d9a78bd62923b0ed0e7",
+        "android_client_info": {
+          "package_name": "com.iruma.prect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832025697830-6f22loe0bh1ostdofcq63v1ttb4ds2m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkLCwLrSzFQJ6CfBLdQ_wCbOttHrDJGpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832025697830-6f22loe0bh1ostdofcq63v1ttb4ds2m0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "832025697830-de694q86n6a1d67oa976trrqg50ik08n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.iruma.prect"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

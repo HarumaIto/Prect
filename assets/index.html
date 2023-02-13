@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>Device initialize page</title>
+    <meta name="viewport" charset="UTF-8">
+    <script>
+            function sendSpiffsData() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onload = (e) => {
+                    // SPIFFSの情報をレスポンスとして取得する
+                    var result = this.response;
+                    console.log('result: '+result);
+                    var args = String(result).split(',');
+
+                    window.flutter_inappwebview.callHandler('setRegisteredData', ...args);
+                };
+                xhttp.open("GET", "/get_spiffs", true);
+                xhttp.send();
+            }
+
+            function receiveRegisterData(args) {
+                console.log(args);
+                var jsonData = {
+                    wifi_ssid: args[0],
+                    wifi_password: args[1],
+                    user_email: args[2],
+                    user_password: args[3]
+                }
+                jsonData = JSON.stringify(jsonData);
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", "/post_forms", true);
+                xhttp.send(sendJsonData);
+            }
+        </script>
+</head>
+<body>
+</body>
+</html>
