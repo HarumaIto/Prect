@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:prect/model/config/database_path.dart';
-import 'package:prect/view_model/database_util.dart';
+
+import '../../../util/database_util.dart';
 
 class CreateChart {
   final List<Color> barColors = [

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:prect/model/device_setup_page_state.dart';
-import 'package:prect/view/device_setup_page.dart';
-import 'package:prect/view_model/device_setup_page_view_model.dart';
+import 'package:prect/model/ui_state/device_setup_page_state.dart';
 
-import '../../model/widget_info.dart';
+import '../../view_model/device_setup_page_view_model.dart';
+import '../device_setup_page.dart';
 
 class WriteInformationStep extends ConsumerWidget {
   static const WEB_PAGE_URI = 'http://192.168.0.20/';

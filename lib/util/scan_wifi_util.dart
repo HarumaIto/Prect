@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:wifi_scan/wifi_scan.dart';
 
-class ScanWifiRepository {
+class ScanWifiUtil {
   bool isScanning = false;
 
   List<String> wifiNames = [];

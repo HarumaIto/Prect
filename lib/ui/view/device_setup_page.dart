@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:prect/model/device_setup_page_state.dart';
-import 'package:prect/view/step/complete_step.dart';
-import 'package:prect/view/step/setup_description_step.dart';
-import 'package:prect/view/main_page.dart';
-import 'package:prect/view/step/wifi_access_step.dart';
-import 'package:prect/view/step/write_infomation_step.dart';
+import 'package:prect/ui/view/step/complete_step.dart';
+import 'package:prect/ui/view/step/setup_description_step.dart';
+import 'package:prect/ui/view/step/wifi_access_step.dart';
+import 'package:prect/ui/view/step/write_infomation_step.dart';
+import '../../model/ui_state/device_setup_page_state.dart';
 import '../view_model/device_setup_page_view_model.dart';
+import 'main_page.dart';
 
 final deviceSetupPageProvider = StateNotifierProvider<DeviceSetupPageNotifier, DeviceSetupPageState>((_) {
   return DeviceSetupPageNotifier();

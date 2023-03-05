@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:prect/view/device_setup_page.dart';
-import 'package:prect/view_model/device_setup_page_view_model.dart';
+
+import '../../view_model/device_setup_page_view_model.dart';
+import '../device_setup_page.dart';
 
 class WifiAccessStep extends ConsumerWidget {
   final DeviceSetupPageViewModel viewModel;

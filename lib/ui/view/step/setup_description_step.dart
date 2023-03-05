@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:prect/model/widget_info.dart';
 
-import '../widget/number_list.dart';
+import '../common_widget/number_list.dart';
 
 class SetupDescriptionStep extends StatelessWidget {
 

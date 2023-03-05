@@ -1,10 +1,8 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:prect/model/authentication_page_state.dart';
-import 'package:prect/view_model/authentication_page_view_model.dart';
+import 'package:prect/model/ui_state/authentication_page_state.dart';
 
-import 'main_page.dart';
+import '../view_model/authentication_page_view_model.dart';
 
 final authenticationPageProvider = StateNotifierProvider<AuthenticationPageNotifier, AuthenticationPageState>((_) {
   return AuthenticationPageNotifier();

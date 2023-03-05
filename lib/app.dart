@@ -1,9 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:prect/view/authenication_page.dart';
-
-import 'view/main_page.dart';
+import 'package:prect/ui/view/authenication_page.dart';
+import 'package:prect/ui/view/main_page.dart';
 
 class MyApp extends ConsumerWidget {
   // RiverPodに登録するようにコンストラクタで取得

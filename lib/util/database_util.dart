@@ -1,6 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:prect/model/config/database_path.dart';
-import 'package:prect/repository/realtime_database.dart';
+import 'package:prect/model/repository/realtime_database.dart';
 
 /// アプリで使用するデータとデータベースで使用するデータを変換する
 class DatabaseUtil {

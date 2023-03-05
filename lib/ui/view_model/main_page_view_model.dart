@@ -1,8 +1,8 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:prect/model/config/database_path.dart';
-import 'package:prect/model/main_page_state.dart';
-import 'package:prect/repository/realtime_database.dart';
-import 'package:prect/view_model/database_util.dart';
+import 'package:prect/model/ui_state/main_page_state.dart';
+import 'package:prect/model/repository/realtime_database.dart';
+
+import '../../util/database_util.dart';
 
 class MainPageViewModel {
 

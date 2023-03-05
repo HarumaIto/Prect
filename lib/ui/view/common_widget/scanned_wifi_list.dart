@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prect/view_model/scan_wifi.dart';
+import 'package:prect/util/scan_wifi_util.dart';
 
 class ScannedWifiList extends StatefulWidget {
   const ScannedWifiList({Key? key}) : super(key: key);
@@ -9,28 +9,28 @@ class ScannedWifiList extends StatefulWidget {
 }
 
 class ScannedWifiListState extends State<ScannedWifiList> {
-  late final ScanWifiRepository wifiRepository;
+  late final ScanWifiUtil wifiUtil;
 
   @override
   void initState() {
     // wifiのリポジトリの初期化
-    wifiRepository = ScanWifiRepository()..init();
-    wifiRepository.startScan();
+    wifiUtil = ScanWifiUtil()..init();
+    wifiUtil.startScan();
     super.initState();
   }
 
   @override
   void dispose() {
-    wifiRepository.dispose();
+    wifiUtil.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    ScanWifiRepository().init();
+    ScanWifiUtil().init();
 
     return StreamBuilder(
-        stream: wifiRepository.state,
+        stream: wifiUtil.state,
         builder: (context, snapshot) {
           final List<String> nameList;
           if (snapshot.hasData) {

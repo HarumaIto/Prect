@@ -2,11 +2,12 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:prect/model/main_page_state.dart';
+import 'package:prect/model/ui_state/main_page_state.dart';
 import 'package:prect/model/data_class/prect_device.dart';
-import 'package:prect/view/device_setup_page.dart';
-import 'package:prect/view_model/chart/create_chart.dart';
-import 'package:prect/view_model/main_page_view_model.dart';
+
+import '../view_model/chart/create_chart.dart';
+import '../view_model/main_page_view_model.dart';
+import 'device_setup_page.dart';
 
 final mainPageProvider =
   StateNotifierProvider.family<MainPageNotifier, MainPageState, List<Map<double, dynamic>>>(
@@ -18,7 +19,7 @@ final mainPageProvider =
 class MainPage extends ConsumerWidget {
   MainPage({super.key});
 
-  MainPageViewModel viewModel = MainPageViewModel();
+  final MainPageViewModel viewModel = MainPageViewModel();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -35,6 +36,7 @@ class MainPage extends ConsumerWidget {
 
           final pageNotifier = ref.read(mainPageProvider(snapshot.data as List<Map<double, dynamic>>).notifier);
           final pageState = ref.watch(mainPageProvider(snapshot.data as List<Map<double, dynamic>>));
+
           return Container(
             margin: const EdgeInsets.only(top: 48, left: 16, right: 16),
             child: SingleChildScrollView(

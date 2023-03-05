@@ -1,7 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:prect/model/authentication_page_state.dart';
-import 'package:prect/view/main_page.dart';
+import 'package:prect/model/ui_state/authentication_page_state.dart';
+
+import '../view/main_page.dart';
 
 class AuthenticationPageViewModel {
   // アカウント作成
